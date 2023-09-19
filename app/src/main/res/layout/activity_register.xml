@@ -28,8 +28,9 @@
         app:layout_constraintTop_toBottomOf="@+id/bg" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tename"
+        android:id="@+id/EtFullName"
         android:layout_width="300dp"
+        android:layout_marginTop="26dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="100dp"
         app:boxStrokeColor="@color/primary"
@@ -44,18 +45,34 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
+        android:id="@+id/EtInitialAmount"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
         app:boxStrokeColor="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tename">
+        app:layout_constraintTop_toBottomOf="@+id/EtFullName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Initial Amount" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/primary"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtInitialAmount" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
