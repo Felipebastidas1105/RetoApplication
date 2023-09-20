@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bg" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/EtFullName"
+        android:id="@+id/inputName"
         android:layout_width="300dp"
         android:layout_marginTop="26dp"
         android:layout_height="wrap_content"
@@ -39,24 +39,27 @@
         app:layout_constraintTop_toBottomOf="@+id/title">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="FullName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/EtInitialAmount"
+        android:id="@+id/input1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         app:boxStrokeColor="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EtFullName">
+        app:layout_constraintTop_toBottomOf="@+id/inputName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EtInitialAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="Initial Amount" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +75,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EtInitialAmount" />
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

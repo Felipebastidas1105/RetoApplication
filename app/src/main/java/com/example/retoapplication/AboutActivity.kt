@@ -20,4 +20,7 @@ class AboutActivity : AppCompatActivity() {
         val intent = Intent(this,GenerateCodeActivity::class.java)
         startActivity(intent)
     }
+    override fun onBackPressed() {
+        finishAffinity()
+    }
 }
